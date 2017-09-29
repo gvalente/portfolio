@@ -1,0 +1,164 @@
+// Flex Grid
+// written by Colin McClure
+// https://codepen.io/colin/
+
+
+// $breakpoints is a Sass list with nested lists inside. Each sub list defines two things.
+// 1. The namespace for that breakpoint. (Required) (i.e. sm, med, lrg, xlrg)
+// 2. The min-width measurement for the breakpoint for that namespace. (i.e. 48em, 62em, 75em)
+
+$breakpoints: (
+  sm:      0px,
+  med:   768px,
+  lrg:  1024px,
+  xlrg: 1200px
+);
+
+// Note: These should be in the proper order (at least till libsass handles map keys properly).
+
+// Column Math
+$half-gutter: .5rem;
+$column-count: 12;
+
+// Row wrapper class, flex box parent.
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: -$half-gutter;
+  margin-left: -$half-gutter;
+
+  & & {
+    flex: 1 1 auto;
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+
+	> * {
+		box-sizing: border-box;
+	}
+}
+
+[class^='col-'],
+[class*=' col-'] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-right: $half-gutter;
+  padding-left: $half-gutter;
+}
+
+.col.reverse {
+  flex-direction: column-reverse;
+}
+
+// Generate a set of grid column classes using a namespace
+// .col-[namespace] for intelligent column division
+// .col-[namespace]-[number] for a column that covers a specific number of columns between 1 and $column-count
+// .off-[namespace]-[number] for pushing a col a specific number of columns between 1 and $column-count-1
+@mixin grid($namespace) {
+  .col-#{$namespace} {
+    flex: 1;
+  }
+
+  @for $i from 1 through $column-count {
+    .col-#{$namespace}-#{$i} {
+      width: percentage($i/$column-count);
+    }
+  }
+
+  @for $i from 0 through ($column-count - 1) {
+    .off-#{$namespace}-#{$i} {
+      margin-left: percentage($i/$column-count);
+    }
+  }
+
+  .no-gutter-#{$namespace} {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .start-#{$namespace} {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-#{$namespace} {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-#{$namespace} {
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-#{$namespace} {
+    align-items: flex-start;
+  }
+
+  .middle-#{$namespace} {
+    align-items: center;
+  }
+
+  .bottom-#{$namespace} {
+    align-items: flex-end;
+  }
+
+  .stretch-#{$namespace} {
+    align-items: stretch;
+  }
+
+  .self-top-#{$namespace} {
+    align-self: flex-start;
+  }
+
+  .self-middle-#{$namespace} {
+    align-self: center;
+  }
+
+  .self-bottom-#{$namespace} {
+    align-self: flex-end;
+  }
+
+  .self-stretch-#{$namespace} {
+    align-self: stretch;
+  }
+
+  .around-#{$namespace} {
+    justify-content: space-around;
+  }
+
+  .between-#{$namespace} {
+    justify-content: space-between;
+  }
+
+  .align-center-#{$namespace} {
+    align-content: center;
+  }
+
+  .first-#{$namespace} {
+    order: -1;
+  }
+
+  .last-#{$namespace} {
+    order: 1;
+  }
+
+  .default-#{$namespace} {
+    order: 0;
+  }
+
+  .divider-#{$namespace} {
+    width: 0;
+    border-left: 1px solid #ccc;
+    margin: 0 calc(#{percentage(1/$column-count/2)} - .5px);
+  }
+}
+
+// Generate the actual grid for each namespace in the $breakpoints.
+@each $namespace, $size in $breakpoints {
+  @media only screen and (min-width: #{$size}) {
+    @include grid($namespace);
+  }
+}
