@@ -1,16 +1,38 @@
 ---
 ---
 @charset "utf-8";
-@import "flex_grid";
+@import "fonts";
 
-// RESETS
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0;
+
+// colors
+$color-base: #263c4d;
+$color-accent1: #31eed7;
+$color-accent2: #ec01ed;
+
+
+// font
+$font-base-color: $color-base;
+$font-body-family: 'CallunaRegular';
+$font-body-size: 24px;
+$font-body-line-height: 36px;
+$font-scale: 1.333;
+
+// font styles
+h1, h2, h3, h4 {
+  font-family: 'MontserratSemiBold'; //TODO: Add fallbacks
 }
 
-h1 {
-  color: red;
-}
+//TODO: set font sizes based on font scale
+h1 { font: 42px/50px; }
+h2 { font: 32px/38px; }
+h3 { font: 24px/28px; }
+h4 { font: 18px/22px; }
+h5 { font: 14px/22px;
+     font-family: 'MontserratRegular';
+   }
+
+// Import partials
+@import
+  "base",
+  "flex_grid"
+;

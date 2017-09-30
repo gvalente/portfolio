@@ -1,3 +1,49 @@
+@font-face {
+  font-family: 'CallunaRegular';
+  src: url("/assets/fonts/calluna-regular-webfont.woff2") format("woff2"), url("/assets/fonts/calluna-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url("/assets/fonts/montserrat-regular-webfont.woff2") format("woff2"), url("/assets/fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MontserratSemiBold';
+  src: url("/assets/fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("/assets/fonts/montserrat-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+h1, h2, h3, h4 {
+  font-family: 'MontserratSemiBold'; }
+
+h1 {
+  font: 42px/50px; }
+
+h2 {
+  font: 32px/38px; }
+
+h3 {
+  font: 24px/28px; }
+
+h4 {
+  font: 18px/22px; }
+
+h5 {
+  font: 14px/22px;
+  font-family: 'MontserratRegular'; }
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "CallunaRegular";
+  font-size: 24px;
+  line-height: 36px;
+  color: #263c4d; }
+
 .grid-row {
   display: flex;
   flex-flow: row wrap;
@@ -572,11 +618,3 @@
     width: 0;
     border-left: 1px solid #ccc;
     margin: 0 calc(4.1666666667% - .5px); } }
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0; }
-
-h1 {
-  color: red; }
