@@ -44,6 +44,12 @@ body {
   line-height: 36px;
   color: #263c4d; }
 
+.site-header {
+  background-color: #263c4d;
+  color: rgba(255, 255, 255, 0.94);
+  height: 72px;
+  width: 100%; }
+
 .grid-row {
   display: flex;
   flex-flow: row wrap;

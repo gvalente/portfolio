@@ -4,10 +4,14 @@
 @import "fonts";
 
 
+// variables
+$std-padding: 6px;
+
 // colors
 $color-base: #263c4d;
 $color-accent1: #31eed7;
 $color-accent2: #ec01ed;
+$color-trans-white: rgba(255,255,255,0.94);
 
 
 // font
@@ -28,11 +32,12 @@ h2 { font: 32px/38px; }
 h3 { font: 24px/28px; }
 h4 { font: 18px/22px; }
 h5 { font: 14px/22px;
-     font-family: 'MontserratRegular';
+     font-family: 'MontserratRegular'; //TODO: Add fallbacks
    }
 
 // Import partials
 @import
   "base",
+  "layout",
   "flex_grid"
 ;
