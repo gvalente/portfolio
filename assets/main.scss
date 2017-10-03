@@ -11,8 +11,7 @@ $std-padding: 6px;
 $color-base: #263c4d;
 $color-accent1: #31eed7;
 $color-accent2: #ec01ed;
-$color-trans-white: rgba(255,255,255,0.94);
-
+$color-white-alpha: rgba(255,255,255,0.94);
 
 // font
 $font-base-color: $color-base;
@@ -22,18 +21,14 @@ $font-body-line-height: 36px;
 $font-scale: 1.333;
 
 // font styles
-h1, h2, h3, h4 {
-  font-family: 'MontserratSemiBold'; //TODO: Add fallbacks
-}
 
 //TODO: set font sizes based on font scale
-h1 { font: 42px/50px; }
-h2 { font: 32px/38px; }
-h3 { font: 24px/28px; }
-h4 { font: 18px/22px; }
-h5 { font: 14px/22px;
-     font-family: 'MontserratRegular'; //TODO: Add fallbacks
-   }
+//TODO: Add fallbacks
+h1 { font: 42px / 50px 'MontserratSemiBold'; letter-spacing: 0.6px; }
+h2 { font: 32px / 38px 'MontserratSemiBold'; letter-spacing: 0.6px; }
+h3 { font: 24px / 28px 'MontserratSemiBold'; letter-spacing: 0.6px; }
+h4 { font: 18px / 22px 'MontserratSemiBold'; }
+h5 { font: 14px / 22px 'MontserratRegular';  }
 
 // Import partials
 @import

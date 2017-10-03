@@ -1,7 +1,53 @@
 // header
 .site-header {
   background-color: $color-base;
-  color: $color-trans-white;
-  height: $std-padding * 12;
+  color: $color-white-alpha;
+  height: 72px;
   width: 100%;
+  display: flex;
+  align-items: center;
+
+  & .nav-container {
+    margin-left: auto;
+
+    & a {
+      font: 18px / 22px 'MontserratSemiBold';
+      color: #fff;
+      text-decoration: none;
+      padding: 0 $std-padding * 2;
+
+      &.active { color: $color-accent2; }
+      &:hover:not(.active) { color: $color-accent1; }
+    }
+  }
+}
+
+// footer
+.site-footer {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  width: 100%;
+  background-color: $color-base;
+  font-size: 14px;
+  color: $color-white-alpha !important;
+
+  & .social {
+    margin-left: $std-padding * 8;
+
+    & a {
+      color: $color-white-alpha;
+      text-decoration: none;
+
+      &:hover { color: $color-accent1; }
+      &:not(:last-child):after {
+        content: "•";
+        color: $color-white-alpha;
+        padding: 0 $std-padding 0 $std-padding * 1.2;
+      }
+    }
+  }
+  & .copyright {
+    margin-left: auto;
+  }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'CallunaRegular';
   src: url("/assets/fonts/calluna-regular-webfont.woff2") format("woff2"), url("/assets/fonts/calluna-regular-webfont.woff") format("woff");
@@ -13,24 +14,23 @@
   src: url("/assets/fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("/assets/fonts/montserrat-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-h1, h2, h3, h4 {
-  font-family: 'MontserratSemiBold'; }
-
 h1 {
-  font: 42px/50px; }
+  font: 42px / 50px 'MontserratSemiBold';
+  letter-spacing: 0.6px; }
 
 h2 {
-  font: 32px/38px; }
+  font: 32px / 38px 'MontserratSemiBold';
+  letter-spacing: 0.6px; }
 
 h3 {
-  font: 24px/28px; }
+  font: 24px / 28px 'MontserratSemiBold';
+  letter-spacing: 0.6px; }
 
 h4 {
-  font: 18px/22px; }
+  font: 18px / 22px 'MontserratSemiBold'; }
 
 h5 {
-  font: 14px/22px;
-  font-family: 'MontserratRegular'; }
+  font: 14px / 22px 'MontserratRegular'; }
 
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
@@ -48,7 +48,42 @@ body {
   background-color: #263c4d;
   color: rgba(255, 255, 255, 0.94);
   height: 72px;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .site-header .nav-container {
+    margin-left: auto; }
+    .site-header .nav-container a {
+      font: 18px / 22px 'MontserratSemiBold';
+      color: #fff;
+      text-decoration: none;
+      padding: 0 12px; }
+      .site-header .nav-container a.active {
+        color: #ec01ed; }
+      .site-header .nav-container a:hover:not(.active) {
+        color: #31eed7; }
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  width: 100%;
+  background-color: #263c4d;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.94) !important; }
+  .site-footer .social {
+    margin-left: 48px; }
+    .site-footer .social a {
+      color: rgba(255, 255, 255, 0.94);
+      text-decoration: none; }
+      .site-footer .social a:hover {
+        color: #31eed7; }
+      .site-footer .social a:not(:last-child):after {
+        content: "•";
+        color: rgba(255, 255, 255, 0.94);
+        padding: 0 6px 0 7.2px; }
+  .site-footer .copyright {
+    margin-left: auto; }
 
 .grid-row {
   display: flex;
