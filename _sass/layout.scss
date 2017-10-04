@@ -2,15 +2,19 @@
 .site-header {
   background-color: $color-base;
   color: $color-white-alpha;
-  height: 72px;
   width: 100%;
   display: flex;
   align-items: center;
 
-  & .nav-container {
-    margin-left: auto;
+  & .site-title {
+    padding: $std-padding*4 0;
+  }
 
-    & a {
+  & .nav-container {
+    display: flex;
+    justify-content: flex-end;
+
+    & .nav-item {
       font: 18px / 22px 'MontserratSemiBold';
       color: #fff;
       text-decoration: none;
@@ -26,28 +30,25 @@
 .site-footer {
   display: flex;
   align-items: center;
-  height: 72px;
+  //height: 72px;
   width: 100%;
   background-color: $color-base;
   font-size: 14px;
   color: $color-white-alpha !important;
+  padding: $std-padding*3 0;
 
-  & .social {
-    margin-left: $std-padding * 8;
+  & .social-item {
+    color: $color-white-alpha;
+    text-decoration: none;
 
-    & a {
+    &:hover { color: $color-accent1; }
+    &:not(:last-child):after {
+      content: "•";
       color: $color-white-alpha;
-      text-decoration: none;
-
-      &:hover { color: $color-accent1; }
-      &:not(:last-child):after {
-        content: "•";
-        color: $color-white-alpha;
-        padding: 0 $std-padding 0 $std-padding * 1.2;
-      }
+      padding: 0 $std-padding 0 $std-padding * 1.2;
     }
   }
   & .copyright {
-    margin-left: auto;
+    text-align: right;
   }
 }

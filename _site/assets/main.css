@@ -47,43 +47,43 @@ body {
 .site-header {
   background-color: #263c4d;
   color: rgba(255, 255, 255, 0.94);
-  height: 72px;
   width: 100%;
   display: flex;
   align-items: center; }
+  .site-header .site-title {
+    padding: 24px 0; }
   .site-header .nav-container {
-    margin-left: auto; }
-    .site-header .nav-container a {
+    display: flex;
+    justify-content: flex-end; }
+    .site-header .nav-container .nav-item {
       font: 18px / 22px 'MontserratSemiBold';
       color: #fff;
       text-decoration: none;
       padding: 0 12px; }
-      .site-header .nav-container a.active {
+      .site-header .nav-container .nav-item.active {
         color: #ec01ed; }
-      .site-header .nav-container a:hover:not(.active) {
+      .site-header .nav-container .nav-item:hover:not(.active) {
         color: #31eed7; }
 
 .site-footer {
   display: flex;
   align-items: center;
-  height: 72px;
   width: 100%;
   background-color: #263c4d;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.94) !important; }
-  .site-footer .social {
-    margin-left: 48px; }
-    .site-footer .social a {
+  color: rgba(255, 255, 255, 0.94) !important;
+  padding: 18px 0; }
+  .site-footer .social-item {
+    color: rgba(255, 255, 255, 0.94);
+    text-decoration: none; }
+    .site-footer .social-item:hover {
+      color: #31eed7; }
+    .site-footer .social-item:not(:last-child):after {
+      content: "•";
       color: rgba(255, 255, 255, 0.94);
-      text-decoration: none; }
-      .site-footer .social a:hover {
-        color: #31eed7; }
-      .site-footer .social a:not(:last-child):after {
-        content: "•";
-        color: rgba(255, 255, 255, 0.94);
-        padding: 0 6px 0 7.2px; }
+      padding: 0 6px 0 7.2px; }
   .site-footer .copyright {
-    margin-left: auto; }
+    text-align: right; }
 
 .grid-row {
   display: flex;
