@@ -2,7 +2,6 @@
 .site-header {
   background-color: $color-base;
   color: $color-white-alpha;
-  width: 100%;
   display: flex;
   align-items: center;
 
@@ -30,8 +29,6 @@
 .site-footer {
   display: flex;
   align-items: center;
-  //height: 72px;
-  width: 100%;
   background-color: $color-base;
   font-size: 14px;
   color: $color-white-alpha !important;
@@ -48,6 +45,7 @@
       padding: 0 $std-padding 0 $std-padding * 1.2;
     }
   }
+  
   & .copyright {
     text-align: right;
   }

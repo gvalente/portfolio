@@ -47,7 +47,6 @@ body {
 .site-header {
   background-color: #263c4d;
   color: rgba(255, 255, 255, 0.94);
-  width: 100%;
   display: flex;
   align-items: center; }
   .site-header .site-title {
@@ -68,7 +67,6 @@ body {
 .site-footer {
   display: flex;
   align-items: center;
-  width: 100%;
   background-color: #263c4d;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.94) !important;
