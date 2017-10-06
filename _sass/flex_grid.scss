@@ -80,7 +80,7 @@ $column-count: 12;
 
   .start-#{$namespace} {
     justify-content: flex-start;
-    text-align: start;
+    text-align: left;
   }
 
   .center-#{$namespace} {
@@ -90,7 +90,7 @@ $column-count: 12;
 
   .end-#{$namespace} {
     justify-content: flex-end;
-    text-align: end;
+    text-align: right;
   }
 
   .top-#{$namespace} {

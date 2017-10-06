@@ -2,24 +2,24 @@
 .site-header {
   background-color: $color-base;
   color: $color-white-alpha;
-  display: flex;
-  align-items: center;
+  // align-items: center;
 
-  & .site-title {
+  .site-title {
     padding: $std-padding*4 0;
     text-transform: uppercase;
   }
 
-  & .nav-container {
-    display: flex;
-    justify-content: flex-end;
+  .nav-container {
+    // display: flex;
+    // justify-content: flex-end;
 
-    & .nav-item {
+    .nav-item {
       font: 18px / 22px 'MontserratSemiBold';
       color: #fff;
       text-decoration: none;
       text-transform: uppercase;
       padding: 0 $std-padding * 2;
+      flex: 0;
 
       &.active { color: $color-accent2; }
       &:hover:not(.active) { color: $color-accent1; }
@@ -34,8 +34,9 @@
   font-size: 14px;
   color: $color-white-alpha !important;
   padding: $std-padding*3 0;
+  flex-direction: row-reverse;
 
-  & .social-item {
+  .social-item {
     color: $color-white-alpha;
     text-decoration: none;
 
@@ -45,9 +46,5 @@
       color: $color-white-alpha;
       padding: 0 $std-padding 0 $std-padding * 1.2;
     }
-  }
-
-  & .copyright {
-    text-align: right;
   }
 }
