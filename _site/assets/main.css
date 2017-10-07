@@ -66,20 +66,20 @@ main {
 
 .site-header {
   background-color: #263c4d;
-  color: rgba(255, 255, 255, 0.94); }
+  color: rgba(255, 255, 255, 0.94);
+  padding: 24px 0; }
   .site-header .site-title {
-    padding: 24px 0;
     text-transform: uppercase; }
-  .site-header .nav-container .nav-item {
+  .site-header .nav-item {
     font: 18px / 22px 'MontserratSemiBold';
-    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.94);
     padding: 0 12px;
     flex: 0; }
-    .site-header .nav-container .nav-item.active {
+    .site-header .nav-item.active {
       color: #ec01ed; }
-    .site-header .nav-container .nav-item:hover:not(.active) {
+    .site-header .nav-item:hover:not(.active) {
       color: #31eed7; }
 
 .site-footer {

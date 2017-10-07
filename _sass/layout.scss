@@ -2,28 +2,22 @@
 .site-header {
   background-color: $color-base;
   color: $color-white-alpha;
-  // align-items: center;
+  padding: $std-padding*4 0;
 
   .site-title {
-    padding: $std-padding*4 0;
     text-transform: uppercase;
   }
 
-  .nav-container {
-    // display: flex;
-    // justify-content: flex-end;
+  .nav-item {
+    font: 18px / 22px 'MontserratSemiBold';
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-white-alpha;
+    padding: 0 $std-padding * 2;
+    flex: 0;
 
-    .nav-item {
-      font: 18px / 22px 'MontserratSemiBold';
-      color: #fff;
-      text-decoration: none;
-      text-transform: uppercase;
-      padding: 0 $std-padding * 2;
-      flex: 0;
-
-      &.active { color: $color-accent2; }
-      &:hover:not(.active) { color: $color-accent1; }
-    }
+    &.active { color: $color-accent2; }
+    &:hover:not(.active) { color: $color-accent1; }
   }
 }
 
