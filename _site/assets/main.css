@@ -43,6 +43,7 @@ body {
   font-size: 24px;
   line-height: 36px;
   color: #263c4d;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
@@ -52,8 +53,7 @@ main {
 
 .full-width {
   display: flex;
-  justify-content: center;
-  background-color: #ffffff; }
+  justify-content: center; }
   .full-width--base_color {
     background-color: #263c4d; }
   .full-width--text-zebra {
@@ -63,6 +63,29 @@ main {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px; }
+
+.spacer {
+  width: 100%;
+  padding-bottom: 48px; }
+
+.project-content {
+  padding: 48px 0 72px; }
+
+p {
+  margin-bottom: 1em; }
+
+.link-button {
+  background-color: #263c4d;
+  font: 18px / 22px 'MontserratSemiBold';
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.94);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3), 0 0 3px rgba(0, 0, 0, 0.2);
+  margin: 0 auto; }
+  .link-button:hover {
+    color: #31eed7; }
 
 .site-header {
   background-color: #263c4d;

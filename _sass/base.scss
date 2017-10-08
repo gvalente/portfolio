@@ -11,6 +11,7 @@ body {
   font-size: $font-body-size;
   line-height: $font-body-line-height;
   color: $color-base;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -23,9 +24,8 @@ main {
 .full-width {
   display: flex;
   justify-content: center;
-  // width: 100%;
-  background-color: #ffffff;
-  &--base_color { background-color: $color-base; }
+
+  &--base_color { background-color: $color-base;             }
   &--text-zebra { background-color: rgba($color-base, 0.04); }
 }
 
@@ -33,4 +33,28 @@ main {
   margin: 0 auto;
   width: 100%;
   max-width: $site-max-width;
+}
+
+.spacer {
+  width: 100%;
+  padding-bottom: $std-padding * 8;
+}
+
+.project-content { padding: $std-padding*8 0 $std-padding*12;}
+
+p { margin-bottom: 1em; }
+
+// Buttons
+.link-button {
+  background-color: $color-base;
+  font: 18px / 22px 'MontserratSemiBold';
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white-alpha;
+  padding: $std-padding * 5;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.30), 0 0 3px rgba(0,0,0,0.2);
+  margin: 0 auto; //TODO: Find flex way to do this
+
+  &:hover { color: $color-accent1; }
 }
