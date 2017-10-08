@@ -51,6 +51,12 @@ body {
 main {
   flex: 1; }
 
+p {
+  margin-bottom: 1em; }
+
+ul {
+  padding-left: 48px; }
+
 .full-width {
   display: flex;
   justify-content: center; }
@@ -67,12 +73,6 @@ main {
 .spacer {
   width: 100%;
   padding-bottom: 48px; }
-
-.project-content {
-  padding: 48px 0 72px; }
-
-p {
-  margin-bottom: 1em; }
 
 .link-button {
   background-color: #263c4d;
@@ -120,6 +120,13 @@ p {
   .project-header .company {
     padding-top: 48px;
     text-transform: uppercase; }
+
+.project-content {
+  padding: 84px 0 60px; }
+
+.content-header {
+  text-transform: uppercase;
+  padding-bottom: 36px; }
 
 .site-footer {
   display: flex;

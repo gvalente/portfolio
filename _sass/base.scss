@@ -21,6 +21,11 @@ main {
   flex: 1;
 }
 
+// Overrides
+p { margin-bottom: 1em; }
+ul { padding-left: $std-padding * 8; }
+
+
 .full-width {
   display: flex;
   justify-content: center;
@@ -39,10 +44,6 @@ main {
   width: 100%;
   padding-bottom: $std-padding * 8;
 }
-
-.project-content { padding: $std-padding*8 0 $std-padding*12;}
-
-p { margin-bottom: 1em; }
 
 // Buttons
 .link-button {
