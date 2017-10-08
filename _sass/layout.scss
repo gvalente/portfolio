@@ -1,18 +1,17 @@
-// header
+// Site Header
 .site-header {
   background-color: $color-base;
   color: $color-white-alpha;
   padding: $std-padding*4 0;
 
-  .site-title {
-    text-transform: uppercase;
-  }
+  .site-title { text-transform: uppercase; }
 
   .nav-item {
     font: 18px / 22px 'MontserratSemiBold';
     text-decoration: none;
     text-transform: uppercase;
     color: $color-white-alpha;
+    transition: color 300ms;
     padding: 0 $std-padding * 2;
     flex: 0;
 
@@ -21,7 +20,30 @@
   }
 }
 
-// footer
+
+// Project Header
+.project-header {
+  flex-flow: column wrap;
+  padding: $std-padding*10 0;
+  color: $color-white-alpha;
+
+  & > * { width: 100%; } //TODO: Gotta be a better way to only put one object per line
+
+  .title {
+    color: $color-accent1;
+    letter-spacing: 1.6px;
+    padding-bottom: $std-padding * 8;
+  }
+
+  .company {
+    padding-top: $std-padding * 8;
+    text-transform: uppercase;
+  }
+}
+
+
+
+// Site Footer
 .site-footer {
   display: flex;
   align-items: center;
