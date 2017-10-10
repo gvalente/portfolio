@@ -23,8 +23,8 @@
 
 // Project Header
 .project-header {
-  flex-flow: column wrap;
   padding: $std-padding*10 0;
+  text-align: center;
   color: $color-white-alpha;
 
   & > * { width: 100%; } //TODO: Gotta be a better way to only put one object per line

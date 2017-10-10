@@ -121,8 +121,8 @@ ul {
       color: #31eed7; }
 
 .project-header {
-  flex-flow: column wrap;
   padding: 60px 0;
+  text-align: center;
   color: rgba(255, 255, 255, 0.94); }
   .project-header > * {
     width: 100%; }
