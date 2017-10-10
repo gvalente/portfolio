@@ -54,6 +54,9 @@ main {
 p {
   margin-bottom: 1em; }
 
+.bold {
+  font-weight: bold; }
+
 ul {
   padding-left: 48px; }
 
@@ -86,6 +89,16 @@ ul {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3), 0 0 3px rgba(0, 0, 0, 0.2);
   margin: 0 auto; }
   .link-button:hover {
+    color: #31eed7; }
+
+.pull-quote {
+  color: rgba(255, 255, 255, 0.94);
+  font-style: italic;
+  padding: 0.75em 0.3em 0.75em 1.3em !important;
+  border-left: 4px solid #ec01ed; }
+  .pull-quote a {
+    color: rgba(255, 255, 255, 0.94); }
+  .pull-quote a:hover {
     color: #31eed7; }
 
 .site-header {
@@ -252,8 +265,7 @@ ul {
     text-align: left; }
 
   .center-sm {
-    justify-content: center;
-    text-align: center; }
+    justify-content: center; }
 
   .end-sm {
     justify-content: flex-end;
@@ -390,8 +402,7 @@ ul {
     text-align: left; }
 
   .center-med {
-    justify-content: center;
-    text-align: center; }
+    justify-content: center; }
 
   .end-med {
     justify-content: flex-end;
@@ -528,8 +539,7 @@ ul {
     text-align: left; }
 
   .center-lrg {
-    justify-content: center;
-    text-align: center; }
+    justify-content: center; }
 
   .end-lrg {
     justify-content: flex-end;
@@ -666,8 +676,7 @@ ul {
     text-align: left; }
 
   .center-xlrg {
-    justify-content: center;
-    text-align: center; }
+    justify-content: center; }
 
   .end-xlrg {
     justify-content: flex-end;
