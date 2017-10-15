@@ -32,16 +32,15 @@ header-params:
   <p>The objective was to tell a unified story of pieced together sporadic activity and blank spots. With one tap to open the app, the user pulled information for a 24 hour period, starting from noon the day before.</p>
 </div>
 
-<div class="image-row col-sm-11 middle-sm col-lrg-8 grid-row">
-  <figure class="image-container col-sm-6">
-    <img src="{{ page.project-img-src }}/dc_feed_1.png" alt="Damage Control Feed">
-    <figcaption>Caption</figcaption>
-  </figure>
-  <figure class="image-container col-sm-6">
-    <img src="{{ page.project-img-src }}/dc_feed_2.png" alt="Damage Control Feed">
-    <figcaption>Caption</figcaption>
-  </figure>
-</div>
+{% include project-img-embed.html
+    project-img-src = page.project-img-src
+    img1-src = "/dc_feed_1.png"
+    img1-alt = "Damage Control Feed 1"
+    img1-caption = "Caption 1"
+    img2-src = "/dc_feed_2.png"
+    img2-alt = "Damage Control Feed 2"
+    img2-caption = nil
+%}
 
 <div class="{{ page.project-wrapper }}">
   <p>It was now easy to group activities and step through your story. Tapping a list item expanded to present the details of that activity. A user could read the content of a tweet or comment they had sent to a friend, or be reminded of liking a handful of photos at 3am. If modifying or deleting an activity was necessary, they could navigate to the permalink of that post.</p>

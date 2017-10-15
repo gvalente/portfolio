@@ -44,17 +44,15 @@ header-params:
   <p>In total we created over 40 reports analyzing different channels and use cases. All of the current reports can be viewed at the <a href="https://simplymeasured.com/sample-reports/" target="_blank">Report Sample Page</a>. Exampled below are the Cross-Channel Label Performance and Facebook Global Pages reports.</p>
 </div>
 
-<div class="image-row col-sm-11 col-lrg-19">
-  <figure class="image-container">
-    <img src="{{ page.project-img-src }}/approach_1.png" alt="Damage Control Feed">
-    <figcaption>Caption</figcaption>
-  </figure>
-  <div class="img-spacer"></div>
-  <figure class="image-container">
-    <img src="{{ page.project-img-src }}/approach_2.png" alt="Damage Control Feed">
-    <figcaption>Caption</figcaption>
-  </figure>
-</div>
+{% include project-img-embed.html
+    project-img-src = page.project-img-src
+    img1-src = "/approach_1.png"
+    img1-alt = "Example Report 1"
+    img1-caption = ""
+    img2-src = "/approach_2.png"
+    img2-alt = "Example Report 2"
+    img2-caption = ""
+%}
 
 <div class="full-width full-width--base_color">
   <div class="wrapper project-content center-sm grid-row">
