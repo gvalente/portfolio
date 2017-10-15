@@ -1,7 +1,20 @@
 {% case include.type %}
 
+
+<!-- Single Inline with No Wrappers -->
+{% when 'inline' %}
+  <div class="image-row">
+    <figure class="image-container">
+      <img src="{{ include.project-img-src }}{{ include.img-src }}" alt="{{ include.img-alt }}">
+      {% if include.img-caption %}
+        <figcaption>{{ include.img-caption }}</figcaption>
+      {% endif %}
+    </figure>
+  </div>
+
+
+<!-- Single Centered with Full Wrappers -->
 {% when 'single-center' %}
-  <!-- Single Centered Image -->
   <div class="image-row col-sm-11 col-med-6 col-xlrg-4">
     <figure class="image-container">
       <img src="{{ include.project-img-src }}{{ include.img1-src }}" alt="{{ include.img1-alt }}">
@@ -12,8 +25,8 @@
   </div>
 
 
+<!-- Side By Side with Full Wrappers -->
 {% when 'side-by-side' %}
-  <!-- Side By Side Images -->
   <div class="image-row col-sm-11 col-xlrg-9">
     <figure class="image-container">
       <img src="{{ include.project-img-src }}{{ include.img1-src }}" alt="{{ include.img1-alt }}">
