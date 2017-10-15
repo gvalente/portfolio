@@ -33,6 +33,7 @@ header-params:
 </div>
 
 {% include project-img-embed.html
+    type = "side-by-side"
     project-img-src = page.project-img-src
     img1-src = "/dc_feed_1.png"
     img1-alt = "Damage Control Feed 1"
@@ -49,12 +50,14 @@ header-params:
   <p>It was free-to-play up to a normal amount of activity – 6 engagements. If an evening was particularly chatty, say 9 engagements, a random 3 of the list items would be present but their details would be locked. A one time in-app purchase of $0.99 would forever unlock your timeline.</p>
 </div>
 
-<div class="image-row col-sm-11 middle-sm col-lrg-8 grid-row">
-  <figure class="image-container col-sm-6">
-    <img src="{{ page.project-img-src }}/dc_lock_1.png" alt="Damage Control Feed">
-    <figcaption>Caption</figcaption>
-  </figure>
-</div>
+
+{% include project-img-embed.html
+    type = "single-center"
+    project-img-src = page.project-img-src
+    img1-src = "/dc_lock_1.png"
+    img1-alt = "Lock Screen In-App Purchase"
+    img1-caption = "Caption Lock"
+%}
 
 <div class="{{ page.project-wrapper }}">
   <p>These locked activities highlighted the exact value you would receive from the in-app purchase and tempted the user to evaluate alternative methods. I keep the selection of locked posts completely random so you might become familiar with it a few times before it became essential to pass.</p>

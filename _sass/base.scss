@@ -58,6 +58,7 @@ ul { padding-left: $std-padding * 8; }
   }
 
   .image-container {
+    margin: 0 auto;
     padding: $std-padding*2 !important;
     box-shadow: inset 0 180px $color-accent1;
 
