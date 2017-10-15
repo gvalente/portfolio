@@ -47,24 +47,45 @@ ul { padding-left: $std-padding * 8; }
 }
 
 // Project Figures
-.image-row { margin: 0 auto !important; }
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
 
-.image-container {
-  margin: 0 auto !important;
-  padding: $std-padding*2 !important;
-  box-shadow: inset 0 180px $color-accent1;
-
-  img {
-    max-width: 100%;
-    max-height: 100%;
+  .img-spacer {
+    width: 48px;
   }
 
-  figcaption {
-    font-size: 14px;
-    text-align: center;
+  .image-container {
+    margin: 0 auto;
+    padding: $std-padding*2 !important;
+    box-shadow: inset 0 120px $color-accent1,
+                inset 0 -60px $color-accent1;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    figcaption {
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+
+      // &::before {
+      //   content: '';
+      //   width: calc(100% + 24px);
+      //   height: 60px;
+      //   position: absolute;
+      //   bottom: -12px;
+      //   left: -12px;
+      //   background-color: #31eed7;
+      //   z-index: -1;
+      // }
+    }
   }
 }
-
 
 
 // Buttons
