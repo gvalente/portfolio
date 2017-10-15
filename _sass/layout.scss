@@ -51,7 +51,10 @@
     padding-bottom: $std-padding * 6;
   }
 
-  .body-header { font-weight: bold; }
+  .body-header {
+    margin: $std-padding*8 0 $std-padding 0;
+    font-weight: bold;
+  }
 }
 
 // Site Footer
