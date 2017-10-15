@@ -21,11 +21,17 @@ main {
   flex: 1;
 }
 
+// Overrides
+p { margin-bottom: 1em; }
+.bold { font-weight: bold; }
+ul { padding-left: $std-padding * 8; }
+
+
 .full-width {
   display: flex;
   justify-content: center;
 
-  &--base_color { background-color: $color-base;             }
+  &--base_color { background-color: $color-base; }
   &--text-zebra { background-color: rgba($color-base, 0.04); }
 }
 
@@ -40,9 +46,26 @@ main {
   padding-bottom: $std-padding * 8;
 }
 
-.project-content { padding: $std-padding*8 0 $std-padding*12;}
+// Project Figures
+.image-row { margin: 0 auto !important; }
 
-p { margin-bottom: 1em; }
+.image-container {
+  margin: 0 auto !important;
+  padding: $std-padding*2 !important;
+  box-shadow: inset 0 180px $color-accent1;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  figcaption {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+
 
 // Buttons
 .link-button {
@@ -58,4 +81,16 @@ p { margin-bottom: 1em; }
   margin: 0 auto; //TODO: Find flex way to do this
 
   &:hover { color: $color-accent1; }
+}
+
+
+// Pull Quote
+.pull-quote {
+  color: $color-white-alpha;
+  font-style: italic;
+  padding: 0.75em 0.3em 0.75em 1.3em !important;
+  border-left: 4px solid $color-accent2;
+
+  a       { color: $color-white-alpha; }
+  a:hover { color: $color-accent1; }
 }
