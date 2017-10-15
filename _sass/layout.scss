@@ -45,11 +45,13 @@
 // Project Content
 .project-content {
   padding: $std-padding*14 0 $std-padding*10;
-}
 
-.content-header {
-  text-transform: uppercase;
-  padding-bottom: $std-padding * 6;
+  .content-header {
+    text-transform: uppercase;
+    padding-bottom: $std-padding * 6;
+  }
+
+  .body-header { font-weight: bold; }
 }
 
 // Site Footer
