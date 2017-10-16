@@ -46,6 +46,10 @@
 .project-content {
   padding: $std-padding*14 0 $std-padding*10;
 
+  &--wide {
+    max-width: 1200px;
+  }
+
   .content-header {
     text-transform: uppercase;
     padding-bottom: $std-padding * 6;

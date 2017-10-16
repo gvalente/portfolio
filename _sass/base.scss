@@ -38,7 +38,11 @@ ul { padding-left: $std-padding * 8; }
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  max-width: $site-max-width;
+  max-width: 600px;
+
+  @media (min-width: map-get($breakpoints, med)) {
+    max-width: $site-max-width;
+  }
 }
 
 .spacer {

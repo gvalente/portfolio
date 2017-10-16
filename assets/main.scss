@@ -33,7 +33,7 @@ h5 { font: 14px / 22px 'MontserratRegular';  }
 
 // Import partials
 @import
+  "flex_grid",
   "base",
-  "layout",
-  "flex_grid"
+  "layout"
 ;

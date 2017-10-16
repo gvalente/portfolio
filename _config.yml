@@ -19,5 +19,4 @@ collections:
   projects:
     output: true
 
-markdown: kramdown
-project-wrapper: wrapper project-content col-sm-11 middle-sm col-med-8 col-xlrg-7
+project-wrapper: wrapper project-content
