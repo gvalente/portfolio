@@ -139,7 +139,8 @@ h5 {
     text-align: left; }
 
   .center-sm {
-    justify-content: center; }
+    justify-content: center;
+    text-align: center; }
 
   .end-sm {
     justify-content: flex-end;
@@ -276,7 +277,8 @@ h5 {
     text-align: left; }
 
   .center-med {
-    justify-content: center; }
+    justify-content: center;
+    text-align: center; }
 
   .end-med {
     justify-content: flex-end;
@@ -413,7 +415,8 @@ h5 {
     text-align: left; }
 
   .center-lrg {
-    justify-content: center; }
+    justify-content: center;
+    text-align: center; }
 
   .end-lrg {
     justify-content: flex-end;
@@ -550,7 +553,8 @@ h5 {
     text-align: left; }
 
   .center-xlrg {
-    justify-content: center; }
+    justify-content: center;
+    text-align: center; }
 
   .end-xlrg {
     justify-content: flex-end;
@@ -640,13 +644,14 @@ ul {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 600px; }
-  @media (min-width: 1024px) {
-    .wrapper {
-      max-width: 1200px; } }
+  width: 100%;
+  max-width: 500px; }
   @media (min-width: 768px) {
     .wrapper {
-      max-width: 1024px; } }
+      max-width: 900px; } }
+  @media (min-width: 1200px) {
+    .wrapper {
+      max-width: 1000px; } }
 
 .spacer {
   width: 100%;
@@ -697,10 +702,14 @@ ul {
 
 .site-header {
   background-color: #263c4d;
-  color: rgba(255, 255, 255, 0.94);
   padding: 24px 0; }
   .site-header .site-title {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.94);
+    transition: color 300ms;
+    text-decoration: none; }
+    .site-header .site-title:hover {
+      color: #31eed7; }
   .site-header .nav-item {
     font: 18px / 22px 'MontserratSemiBold';
     text-decoration: none;
@@ -718,8 +727,6 @@ ul {
   padding: 60px 0;
   text-align: center;
   color: rgba(255, 255, 255, 0.94); }
-  .project-header > * {
-    width: 100%; }
   .project-header .title {
     color: #31eed7;
     letter-spacing: 1.6px;

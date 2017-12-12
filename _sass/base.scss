@@ -37,12 +37,13 @@ ul { padding-left: $std-padding * 8; }
 
 .wrapper {
   margin: 0 auto;
-  max-width: 600px;
-  @media (min-width: map-get($breakpoints, lrg)) {
-    max-width: map-get($breakpoints, xlrg);
+  width: 100%;
+  max-width: 500px;
+  @media (min-width: map-get($breakpoints, med)) { // 768px
+    max-width: 900px;
   }
-  @media (min-width: map-get($breakpoints, med)) {
-    max-width: map-get($breakpoints, lrg);
+  @media (min-width: map-get($breakpoints, xlrg)) { // 1200px
+    max-width: 1000px;
   }
 }
 

@@ -85,7 +85,7 @@ $column-count: 12;
 
   .center-#{$namespace} {
     justify-content: center;
-    // text-align: center;
+    text-align: center;
   }
 
   .end-#{$namespace} {
