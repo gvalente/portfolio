@@ -15,8 +15,8 @@
 
 <!-- Single Centered with Full Wrappers -->
 {% when 'single-center' %}
-  <div class="image-row col-sm-11 col-med-6 col-xlrg-4">
-    <figure class="image-container">
+  <div class="wrapper image-row">
+    <figure class="image-container image-container--restrict-height">
       <img src="{{ include.project-img-src }}{{ include.img1-src }}" alt="{{ include.img1-alt }}">
       {% if include.img1-caption %}
         <figcaption>{{ include.img1-caption }}</figcaption>
@@ -27,15 +27,15 @@
 
 <!-- Side By Side with Full Wrappers -->
 {% when 'side-by-side' %}
-  <div class="image-row col-sm-11 col-xlrg-9">
-    <figure class="image-container">
+  <div class="wrapper image-row image-row--wide">
+    <figure class="image-container image-container--restrict-height">
       <img src="{{ include.project-img-src }}{{ include.img1-src }}" alt="{{ include.img1-alt }}">
       {% if include.img1-caption %}
         <figcaption>{{ include.img1-caption }}</figcaption>
       {% endif %}
     </figure>
     <div class="img-spacer"></div>
-    <figure class="image-container">
+    <figure class="image-container image-container--restrict-height">
       <img src="{{ include.project-img-src }}{{ include.img2-src }}" alt="{{ include.img2-alt }}">
       {% if include.img2-caption %}
         <figcaption>{{ include.img2-caption }}</figcaption>

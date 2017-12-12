@@ -1,10 +1,16 @@
 // Site Header
 .site-header {
   background-color: $color-base;
-  color: $color-white-alpha;
   padding: $std-padding*4 0;
 
-  .site-title { text-transform: uppercase; }
+  .site-title {
+    text-transform: uppercase;
+    color: $color-white-alpha;
+    transition: color 300ms;
+    text-decoration: none;
+
+    &:hover { color: $color-accent1; }
+  }
 
   .nav-item {
     font: 18px / 22px 'MontserratSemiBold';
@@ -27,8 +33,6 @@
   text-align: center;
   color: $color-white-alpha;
 
-  & > * { width: 100%; } //TODO: Gotta be a better way to only put one object per line
-
   .title {
     color: $color-accent1;
     letter-spacing: 1.6px;
@@ -44,7 +48,7 @@
 
 // Project Content
 .project-content {
-  padding: $std-padding*14 0 $std-padding*10;
+  padding: $std-padding*14 $std-padding*4 $std-padding*10 $std-padding*4;
 
   .content-header {
     text-transform: uppercase;
@@ -55,18 +59,16 @@
     margin-bottom: $std-padding;
     font-weight: bold;
   }
-
-
 }
+
 
 // Site Footer
 .site-footer {
   display: flex;
-  align-items: center;
+  //align-items: center;
   font-size: 14px;
   color: $color-white-alpha !important;
   padding: $std-padding*3 0;
-  flex-direction: row-reverse;
 
   .social-item {
     color: $color-white-alpha;

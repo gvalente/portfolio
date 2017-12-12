@@ -38,7 +38,14 @@ ul { padding-left: $std-padding * 8; }
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  max-width: $site-max-width;
+  max-width: 450px;
+
+  @media (min-width: map-get($breakpoints, med)) { // 768px
+    max-width: 768px;
+  }
+  @media (min-width: map-get($breakpoints, xlrg)) { // 1200px
+    max-width: 900px;
+  }
 }
 
 .spacer {
@@ -49,16 +56,24 @@ ul { padding-left: $std-padding * 8; }
 // Project Figures
 .image-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
 
+  &--narrow {
+    width: 40vw;
+    max-width: 450px;
+  }
+  &--wide {
+    width: 90vw;
+    max-width: 1200px;
+  }
+
   .img-spacer {
-    width: 48px;
+    width: 5vw;
   }
 
   .image-container {
-    margin: 0 auto;
     padding: $std-padding*2 !important;
     box-shadow: inset 0 120px $color-accent1,
                 inset 0 -60px $color-accent1;
@@ -66,6 +81,11 @@ ul { padding-left: $std-padding * 8; }
     img {
       max-width: 100%;
       max-height: 100%;
+    }
+
+    &--restrict-height img {
+        max-height: 86vh;
+        object-fit: contain;
     }
 
     figcaption {
@@ -99,7 +119,6 @@ ul { padding-left: $std-padding * 8; }
   padding: $std-padding * 5;
   border-radius: 5px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.30), 0 0 3px rgba(0,0,0,0.2);
-  margin: 0 auto; //TODO: Find flex way to do this
 
   &:hover { color: $color-accent1; }
 }

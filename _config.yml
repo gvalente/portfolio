@@ -6,7 +6,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 
 # User Settings
 email: gino.valente3@gmail.com
@@ -19,5 +19,10 @@ collections:
   projects:
     output: true
 
-markdown: kramdown
-project-wrapper: wrapper project-content col-sm-11 middle-sm col-med-8 col-xlrg-7
+project-wrapper: wrapper project-content
+
+project-width:
+  sm: 450
+  med: 768
+  lrg: 900
+  xlrg: 1200
