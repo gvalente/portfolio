@@ -44,11 +44,11 @@
 
 // Project Content
 .project-content {
-  padding: $std-padding*14 0 $std-padding*10;
+  padding: $std-padding*14 $std-padding*4 $std-padding*10 $std-padding*4;
 
-  &--wide {
-    max-width: 1200px;
-  }
+  // &--wide {
+  //   max-width: 1200px;
+  // }
 
   .content-header {
     text-transform: uppercase;

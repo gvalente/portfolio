@@ -37,11 +37,12 @@ ul { padding-left: $std-padding * 8; }
 
 .wrapper {
   margin: 0 auto;
-  width: 100%;
   max-width: 600px;
-
+  @media (min-width: map-get($breakpoints, lrg)) {
+    max-width: map-get($breakpoints, xlrg);
+  }
   @media (min-width: map-get($breakpoints, med)) {
-    max-width: $site-max-width;
+    max-width: map-get($breakpoints, lrg);
   }
 }
 

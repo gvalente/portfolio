@@ -640,11 +640,13 @@ ul {
 
 .wrapper {
   margin: 0 auto;
-  width: 100%;
   max-width: 600px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .wrapper {
       max-width: 1200px; } }
+  @media (min-width: 768px) {
+    .wrapper {
+      max-width: 1024px; } }
 
 .spacer {
   width: 100%;
@@ -727,9 +729,7 @@ ul {
     text-transform: uppercase; }
 
 .project-content {
-  padding: 84px 0 60px; }
-  .project-content--wide {
-    max-width: 1200px; }
+  padding: 84px 24px 60px 24px; }
   .project-content .content-header {
     text-transform: uppercase;
     padding-bottom: 36px; }
