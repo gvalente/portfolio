@@ -59,18 +59,16 @@
     margin-bottom: $std-padding;
     font-weight: bold;
   }
-
-
 }
+
 
 // Site Footer
 .site-footer {
   display: flex;
-  align-items: center;
+  //align-items: center;
   font-size: 14px;
   color: $color-white-alpha !important;
   padding: $std-padding*3 0;
-  flex-direction: row-reverse;
 
   .social-item {
     color: $color-white-alpha;
