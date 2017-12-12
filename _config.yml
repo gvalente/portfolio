@@ -20,3 +20,9 @@ collections:
     output: true
 
 project-wrapper: wrapper project-content
+
+project-width:
+  sm: 450
+  med: 768
+  lrg: 900
+  xlrg: 1200

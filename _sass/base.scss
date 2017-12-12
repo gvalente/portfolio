@@ -59,9 +59,19 @@ ul { padding-left: $std-padding * 8; }
   justify-content: space-between;
   align-items: flex-start;
   margin: 0 auto;
+  //max-height: 400px;
+
+  &--narrow {
+    width: 40vw;
+    max-width: 450px;
+  }
+  &--wide {
+    width: 90vw;
+    max-width: 1200px;
+  }
 
   .img-spacer {
-    width: 48px;
+    width: 5vw;
   }
 
   .image-container {
