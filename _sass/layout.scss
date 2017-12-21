@@ -30,18 +30,17 @@
 // Project Header
 .project-header {
   padding: $std-padding*10 0;
-  text-align: center;
   color: $color-white-alpha;
+
+  @media (min-width: map-get($breakpoints, xlrg)) { // 1200px
+    max-width: 768px;
+  }
 
   .title {
     color: $color-accent1;
     letter-spacing: 1.6px;
-    padding-bottom: $std-padding * 8;
-  }
-
-  .company {
-    padding-top: $std-padding * 8;
     text-transform: uppercase;
+    padding-bottom: $std-padding * 8;
   }
 }
 
