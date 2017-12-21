@@ -1,0 +1,13 @@
+
+<!-- Single Centered with Full Wrappers -->
+<div class="image-row">
+  <figure class="image-container">
+    <img src="{{ include.src }}" alt="alt">
+<!--
+    <img src="{{ include.project-img-src }}{{ include.img1-src }}" alt="{{ include.img1-alt }}">
+-->
+    {% if include.caption %}
+      <figcaption>{{ include.caption }}</figcaption>
+    {% endif %}
+  </figure>
+</div>
