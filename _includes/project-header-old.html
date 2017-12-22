@@ -2,5 +2,8 @@
   <div class="wrapper project-header">
     <h1 class="title">{{ include.params.title }}</h1>
     <span class="subtitle">{{ include.params.sub-title }}</span>
+    {% if include.params.company %}
+      <h4 class="company">{{ include.params.company }} • {{ include.params.when }}</h4>
+    {% endif %}
   </div>
 </div>

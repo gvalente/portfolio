@@ -1,46 +1,18 @@
-{% case include.type %}
-
-
-<!-- Single Inline with No Wrappers -->
-{% when 'inline' %}
-  <div class="image-row">
-    <figure class="image-container">
-      <img src="{{ include.project-img-src }}{{ include.img-src }}" alt="{{ include.img-alt }}">
-      {% if include.img-caption %}
-        <figcaption>{{ include.img-caption }}</figcaption>
-      {% endif %}
-    </figure>
-  </div>
-
 
 <!-- Single Centered with Full Wrappers -->
-{% when 'single-center' %}
-  <div class="wrapper image-row">
-    <figure class="image-container image-container--restrict-height">
-      <img src="{{ include.project-img-src }}{{ include.img1-src }}" alt="{{ include.img1-alt }}">
-      {% if include.img1-caption %}
-        <figcaption>{{ include.img1-caption }}</figcaption>
-      {% endif %}
-    </figure>
-  </div>
+<div class="image-row">
+  <figure class="image-container">
 
-
-<!-- Side By Side with Full Wrappers -->
-{% when 'side-by-side' %}
-  <div class="wrapper image-row image-row--wide">
-    <figure class="image-container image-container--restrict-height">
-      <img src="{{ include.project-img-src }}{{ include.img1-src }}" alt="{{ include.img1-alt }}">
-      {% if include.img1-caption %}
-        <figcaption>{{ include.img1-caption }}</figcaption>
+    <img
+      src="{{ include.page-src }}{{ include.src }}"
+      {% if include.alt %}
+        alt="{{ include.alt }}"
       {% endif %}
-    </figure>
-    <div class="img-spacer"></div>
-    <figure class="image-container image-container--restrict-height">
-      <img src="{{ include.project-img-src }}{{ include.img2-src }}" alt="{{ include.img2-alt }}">
-      {% if include.img2-caption %}
-        <figcaption>{{ include.img2-caption }}</figcaption>
-      {% endif %}
-    </figure>
-  </div>
+    >
 
-{% endcase %}
+    {% if include.caption %}
+      <figcaption>{{ include.caption }}</figcaption>
+    {% endif %}
+
+  </figure>
+</div>
