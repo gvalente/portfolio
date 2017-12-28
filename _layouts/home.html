@@ -5,36 +5,14 @@ layout: default
 <div class="full-width full-width--text-zebra">
   <div class="wrapper">
     <div class="home-grid">
-      <div class="item">
-        <a href="#">
-          <div class="content">
-            <img src="/assets/images/home/data-viz.png" />
-            <div class="overlay-light"></div>
-            <div class="overlay-dark"></div>
-            <h1 class="title">Data viz</h1>
-          </div>
-        </a>
-      </div>
-
-      <div class="item">
-        <div class="content">
-          <img src="http://www.placecage.com/600/400" />
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="content">
-          <img src="http://www.placecage.com/400/600" />
-        </div>
-      </div>
+      {% for project in site.projects %}
+        {% include
+          home-item.html
+            url = project.url
+            title = project.header-params.title
+            img-src = project.project-img-src
+        %}
+      {% endfor %}
     </div>
   </div>
 </div>
-
-
-
-{% for project in site.projects %}
-  <div>
-    <h2><a href="{{ project.url }}">{{ project.title }}</a><h2>
-  </div>
-{% endfor %}
