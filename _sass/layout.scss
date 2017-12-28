@@ -27,21 +27,94 @@
 }
 
 
+// Site Home
+.home-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    position: relative;
+    margin: $std-padding*3;
+    flex-basis: calc(100% - #{$std-padding*6});
+
+    @media (min-width: map-get($breakpoints, med)) { // 768px
+      flex-basis: calc(50% - #{$std-padding*6});
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 62%;
+    }
+
+    .content {
+      position: absolute;
+      top: 0; bottom: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      // TODO: This is all super dumb. Please refactor soon
+      .overlay-light {
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        opacity: 0;
+        transition: opacity 0.4s;
+        background-color: darken($color-accent2, 10%);
+        mix-blend-mode: lighten;
+      }
+
+      .overlay-dark {
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        opacity: 0;
+        transition: opacity 0.4s;
+        background-color: rgba(0,0,0,0.3);
+        mix-blend-mode: normal;
+      }
+
+      .title {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.4s;
+        z-index: 1;
+        color: $color-white-alpha;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5),
+                     0px 2px 3px rgba(0, 0, 0, 0.2)
+      }
+
+      &:hover .overlay-light,
+      &:hover .overlay-dark,
+      &:hover .title {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
 // Project Header
 .project-header {
   padding: $std-padding*10 0;
-  text-align: center;
   color: $color-white-alpha;
+
+  @media (min-width: map-get($breakpoints, xlrg)) { // 1200px
+    max-width: 768px;
+  }
 
   .title {
     color: $color-accent1;
     letter-spacing: 1.6px;
-    padding-bottom: $std-padding * 8;
-  }
-
-  .company {
-    padding-top: $std-padding * 8;
     text-transform: uppercase;
+    padding-bottom: $std-padding * 8;
   }
 }
 
@@ -65,7 +138,6 @@
 // Site Footer
 .site-footer {
   display: flex;
-  //align-items: center;
   font-size: 14px;
   color: $color-white-alpha !important;
   padding: $std-padding*3 0;

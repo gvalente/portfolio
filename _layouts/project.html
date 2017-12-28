@@ -1,5 +1,18 @@
 ---
 layout: default
 ---
-<!-- TODO: Use project-header include with project variables passed -->
+
+{% include
+  project-header.html
+  params = page.header-params
+%}
+
+{% for image in page.images %}
+  {% include
+    project-img-embed.html
+    page-src = page.project-img-src
+    src = image
+  %}
+{% endfor %}
+
 {{ content }}

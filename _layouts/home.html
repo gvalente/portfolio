@@ -2,10 +2,17 @@
 layout: default
 ---
 
-<h1>Projects</h1>
-
-{% for project in site.projects %}
-  <div>
-    <h2><a href="{{ project.url }}">{{ project.title }}</a><h2>
+<div class="full-width full-width--text-zebra">
+  <div class="wrapper">
+    <div class="home-grid">
+      {% for project in site.projects %}
+        {% include
+          home-item.html
+            url = project.url
+            title = project.header-params.title
+            img-src = project.project-img-src
+        %}
+      {% endfor %}
+    </div>
   </div>
-{% endfor %}
+</div>
