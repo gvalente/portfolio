@@ -52,9 +52,10 @@
 
     .content {
       position: absolute;
-      top: 0; left: 0;
-      height: 100%;
-      width: 100%;
+      top: 0; bottom: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       img {
         width: 100%;
@@ -62,29 +63,41 @@
         object-fit: cover;
       }
 
-      .overlay {
+      // TODO: This is all super dumb. Please refactor soon
+      .overlay-light {
         position: absolute;
-        top: 0; left: 0;
-        bottom: 0; right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: darken($color-accent2, 10%);
-        mix-blend-mode: lighten;
+        top: 0; bottom: 0; left: 0; right: 0;
         opacity: 0;
         transition: opacity 0.4s;
+        background-color: darken($color-accent2, 10%);
+        mix-blend-mode: lighten;
+      }
 
-        &:hover {
-          opacity: 1;
-        }
+      .overlay-dark {
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        opacity: 0;
+        transition: opacity 0.4s;
+        background-color: rgba(0,0,0,0.3);
+        mix-blend-mode: normal;
+      }
 
-        .title {
-          color: $color-white-alpha;
-          text-align: center;
-          text-transform: uppercase;
-          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5),
-                       0px 2px 3px rgba(0, 0, 0, 0.2)
-        }
+      .title {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.4s;
+        z-index: 1;
+        color: $color-white-alpha;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5),
+                     0px 2px 3px rgba(0, 0, 0, 0.2)
+      }
+
+      &:hover .overlay-light,
+      &:hover .overlay-dark,
+      &:hover .title {
+        opacity: 1;
       }
     }
   }
