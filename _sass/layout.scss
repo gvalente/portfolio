@@ -124,7 +124,7 @@
   @media (min-width: map-get($breakpoints, xlrg)) { // 1200px
     max-width: 768px;
   }
-  
+
   .header {
     text-transform: uppercase;
     padding-top: $std-padding * 6;
@@ -139,6 +139,64 @@
     height: $std-padding * 10;
   }
 }
+
+
+// Project Image Embed
+.image-row {
+  width: 100%;
+  margin: 0 auto;
+
+  .image-container {
+    padding: $std-padding * 4;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      outline: $std-padding*(2/3) solid $color-accent1;
+      transition: box-shadow 600ms;
+
+      object-fit: scale-down;
+      max-width: 90vw;
+      max-height: 90vh;
+    }
+
+    figcaption {
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      padding-top: $std-padding;
+    }
+  }
+}
+
+// Marvel Prototype Embeds
+.prototype-row {
+  width: 100%;
+  margin: 0 auto;
+
+  &--vertical   { max-width: 50vw; }
+  &--horizontal { max-width: 80vw; }
+
+  .marvel-wrapper {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    outline: $std-padding*(2/3) solid $color-accent1;
+
+    iframe {
+      position: absolute;
+      top:0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #marvel-listening      { padding-bottom:  70%; } // 1280x900
+  #marvel-dashboard      { padding-bottom: 124%; } // 1280x1580
+  #marvel-profile-picker { padding-bottom:  67%; } // 1280x850
+}
+
+
 
 
 

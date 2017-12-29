@@ -18,6 +18,13 @@ layout: default
           src = embed
       %}
 
+    {% when 'prototype' %}
+      <div class="prototype-row prototype-row--{{ embed.orientation }}">
+        <div class="marvel-wrapper" id="marvel-{{ embed.name }}">
+          <iframe src="{{ embed.src }}" width="{{ embed.width }}" height="{{ embed.height }}" allowTransparency="true" frameborder="0"></iframe>
+        </div>
+      </div>
+
     {% when 'text' %}
       <div class="wrapper project-content">
         {% if embed.header %}
