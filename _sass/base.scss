@@ -56,7 +56,6 @@ ul { padding-left: $std-padding * 8; }
 .image-row {
   width: 100%;
   margin: 0 auto;
-  background-color: $color-base-light;
 
   .image-container {
     padding: $std-padding * 4;
@@ -84,6 +83,7 @@ ul { padding-left: $std-padding * 8; }
 
 // Buttons
 .link-button {
+  display: inline-block;
   background-color: $color-base;
   font: 18px / 22px 'MontserratSemiBold';
   text-transform: uppercase;

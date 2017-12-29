@@ -121,18 +121,25 @@
 
 // Project Content
 .project-content {
-  padding: $std-padding*14 $std-padding*4 $std-padding*10 $std-padding*4;
-
-  .content-header {
-    text-transform: uppercase;
-    padding-bottom: $std-padding * 6;
+  @media (min-width: map-get($breakpoints, xlrg)) { // 1200px
+    max-width: 768px;
   }
-
+  
+  .header {
+    text-transform: uppercase;
+    padding-top: $std-padding * 6;
+    padding-bottom: $std-padding * 2;
+  }
   .body-header {
     margin-bottom: $std-padding;
     font-weight: bold;
   }
+  .spacer {
+    width: 100%;
+    height: $std-padding * 10;
+  }
 }
+
 
 
 // Site Footer

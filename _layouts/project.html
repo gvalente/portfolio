@@ -7,12 +7,39 @@ layout: default
   params = page.header-params
 %}
 
-{% for image in page.images %}
-  {% include
-    project-img-embed.html
-    page-src = page.project-img-src
-    src = image
-  %}
+
+{% for embed in page.embeds %}
+  {% case embed.type %}
+
+    {% when nil %}
+      {% include
+        project-img-embed.html
+          page-src = page.project-img-src
+          src = embed
+      %}
+
+    {% when 'text' %}
+      <div class="wrapper project-content">
+        {% if embed.header %}
+          <h2 class="header">{{ embed.header }}</h2>
+        {% endif %}
+        <p>{{ embed.body }}</p>
+      </div>
+
+    {% when 'button' %}
+      <div class="wrapper project-content">
+        <div class="center-sm">
+          <a class="link-button" href="{{ embed.url }}" target="_blank">{{ embed.content }}</a>
+        </div>
+      </div>
+
+    {% when 'spacer' %}
+      <div class="wrapper project-content">
+        <div class="spacer"></div>
+      </div>
+
+  {% endcase %}
 {% endfor %}
+
 
 {{ content }}

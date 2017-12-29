@@ -1,68 +1,26 @@
-{% include project-img-embed.html page-src = page.project-img-src
-    src = ""
-    alt = ""
+- type: text
+  header: This Website!
+  body: I designed and coded this portfolio completely from scratch using an empty Jekyll template. A font scale of 1.33 and strong three color palette was created and I was off to development. The portfolio went through a few versions before being releasing as half way through I completely changed the structure of the portfolio from a verbose case-study approach to more of a gallery of my work. This site was first released in January 2018.
+- type: button
+
+
+{% include
+  project-img-embed.html
+  page-src = page.project-img-src
+  src = image
 %}
 
-<!-- {% include project-header.html
-  title = {{page.header-params.title}}
-  sub-title = {{page.header-params.sub-title}}
-%} -->
-
-<!-- {% include project-header.html params=page.header-params %} -->
+{% if user %}
+  Hello {{ user.name }}!
+{% endif %}
 
 
-{% include project-img-embed.html page-src=page.project-img-src
-    src = "paid-campaign-overview.png"
-    alt = "paid campaign overview"
-    caption = "this is a caption"
-%}
-
-{% include project-img-embed.html page-src=page.project-img-src
-    src = "paid-campaign-card-investigation.png"
-    alt = "paid-campaign-card-investigation"
-%}
-
-{% include project-img-embed.html page-src = page.project-img-src
-    src = "paid-explore.png"
-    alt = "paid-explore"
-%}
-
-{% include project-img-embed.html page-src = page.project-img-src
-    src = "listening-volume-segment.png"
-    alt = "listening-volume-segment"
-%}
-
-{% include project-img-embed.html page-src = page.project-img-src
-    src = "listening-sentiment-segment.png"
-    alt = "listening-sentiment-segment"
-%}
-
-{% include project-img-embed.html page-src = page.project-img-src
-    src = "social-attribution.png"
-    alt = "social-attribution"
-%}
-
-{% include project-img-embed.html page-src = page.project-img-src
-    src = "comparison.png"
-    alt = "comparison"
-%}
-
-{% include project-img-embed.html page-src = page.project-img-src
-    src = "topic-utilization-states.png"
-    alt = "topic-utilization-states"
-%}
-
-{% include project-img-embed.html page-src = page.project-img-src
-    src = "excel-report1.png"
-    alt = "excel-report1"
-%}
-
-{% include project-img-embed.html page-src = page.project-img-src
-    src = "excel-report2.png"
-    alt = "excel-report2"
-%}
-
-{% include project-img-embed.html page-src = page.project-img-src
-    src = "excel-report-themes.png"
-    alt = "excel-report-themes"
-%}
+{% assign handle = 'cake' %}
+{% case handle %}
+  {% when 'cake' %}
+     This is a cake
+  {% when 'cookie' %}
+     This is a cookie
+  {% else %}
+     This is not a cake nor a cookie
+{% endcase %}
