@@ -18,6 +18,14 @@ layout: default
           src = embed
       %}
 
+    {% when 'img-compare' %}
+      {% include
+        project-img-compare-embed.html
+          page-src = page.project-img-src
+          src1 = embed.src1
+          src2 = embed.src2
+      %}
+
     {% when 'prototype' %}
       <div class="prototype-row prototype-row--{{ embed.orientation }}">
         <div class="marvel-wrapper" id="marvel-{{ embed.name }}">
@@ -48,5 +56,10 @@ layout: default
   {% endcase %}
 {% endfor %}
 
+<script type="text/javascript">
+  $(function(){
+    $(".twentytwenty-container").twentytwenty();
+  });
+</script>
 
 {{ content }}

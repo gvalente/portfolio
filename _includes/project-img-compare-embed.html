@@ -1,0 +1,18 @@
+<div class="image-row">
+  <div class="image-container twentytwenty-container">
+
+    <img
+      src="{{ include.page-src }}{{ include.src1 }}"
+      {% if include.alt %}
+        alt="{{ include.alt }}"
+      {% endif %}
+    >
+    <img
+      src="{{ include.page-src }}{{ include.src2 }}"
+      {% if include.alt %}
+        alt="{{ include.alt }}"
+      {% endif %}
+    >
+
+  </div>
+</div>

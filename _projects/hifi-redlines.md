@@ -12,6 +12,9 @@ embeds:
 - aam-add-account-states.png
 - menu-profile-picker.png
 - menu-campaign-picker.png
+- type: img-compare
+  src1: menu-profile-picker.png
+  src2: menu-profile-picker-RL.png
 - sidebar-color-investigation.png
 - app-scheduling.png
 - post-cards1.png
@@ -32,4 +35,13 @@ embeds:
 - dc-feed1.png
 - dc-feed2.png
 - dc-iap.png
+
+custom_css:
+
+- /assets/2020/css/twentytwenty.css
+
+custom_js:
+- https://code.jquery.com/jquery-3.2.1.js
+- /assets/2020/js/jquery.event.move.js
+- /assets/2020/js/jquery.twentytwenty.js
 ---
