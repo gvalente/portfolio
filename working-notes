@@ -1,0 +1,21 @@
+- type: prototype
+  orientation:
+  name:
+  src:
+  width:
+  height:
+
+#marvel-listening      { padding-bottom:  70%; } // 1280x900
+<iframe src="https://marvelapp.com/1cf4467?emb=1" width="1280" height="900" allowTransparency="true" frameborder="0"></iframe>
+
+#marvel-dashboard      { padding-bottom: 124%; } // 1280x1580
+<iframe src="https://marvelapp.com/27j5090?emb=1" width="1280" height="1580" allowTransparency="true" frameborder="0"></iframe>
+
+#marvel-profile-picker { padding-bottom:  67%; } // 1280x850
+<iframe src="https://marvelapp.com/30i6h61?emb=1" width="1280" height="850" allowTransparency="true" frameborder="0"></iframe>
+
+#marvel-add-profile-lofi { padding-bottom:  62.5%; } // 1520x950
+<iframe src="https://marvelapp.com/2j173j5?emb=1" width="1520" height="950" allowTransparency="true" frameborder="0"></iframe>
+
+#marvel-add-profile-medfi { padding-bottom:  62.5%; } // 1520x950
+<iframe src="https://marvelapp.com/2j812i1?emb=1" width="1520" height="950" allowTransparency="true" frameborder="0"></iframe>

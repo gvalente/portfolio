@@ -172,7 +172,7 @@
 // Marvel Prototype Embeds
 .prototype-row {
   width: 100%;
-  margin: 0 auto;
+  margin: $std-padding*4 auto;
 
   &--vertical   { max-width: 50vw; }
   &--horizontal { max-width: 80vw; }
@@ -191,13 +191,12 @@
     }
   }
 
-  #marvel-listening      { padding-bottom:  70%; } // 1280x900
-  #marvel-dashboard      { padding-bottom: 124%; } // 1280x1580
-  #marvel-profile-picker { padding-bottom:  67%; } // 1280x850
+  #marvel-listening         { padding-bottom:  70%;   } // 1280x900
+  #marvel-dashboard         { padding-bottom: 124%;   } // 1280x1580
+  #marvel-profile-picker    { padding-bottom:  67%;   } // 1280x850
+  #marvel-add-profile-lofi  { padding-bottom:  62.5%; } // 1520x950
+  #marvel-add-profile-medfi { padding-bottom:  62.5%; } // 1520x950
 }
-
-
-
 
 
 // Site Footer
