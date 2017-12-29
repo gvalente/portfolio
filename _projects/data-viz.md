@@ -6,7 +6,7 @@ header-params:
   title: Data Visualization
   sub-title: My professional career is focused on telling complex stories by transforming complex data into actionable and insightful information. Understanding the user’s context with the data is vital to making information accessible and dictates the form. The following are examples of different stories I’ve told with information focused on principles of clarity, accessibility, and delivering insight.
 
-images:
+embeds:
 - paid-campaign-overview.png
 - paid-campaign-card-investigation.png
 - paid-explore.png

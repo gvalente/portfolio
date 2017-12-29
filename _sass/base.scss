@@ -53,37 +53,12 @@ ul { padding-left: $std-padding * 8; }
   padding-bottom: $std-padding * 8;
 }
 
-.image-row {
-  width: 100%;
-  margin: 0 auto;
-  background-color: $color-base-light;
 
-  .image-container {
-    padding: $std-padding * 4;
-
-    img {
-      display: block;
-      margin: 0 auto;
-      outline: $std-padding*(2/3) solid $color-accent1;
-      transition: box-shadow 600ms;
-
-      object-fit: scale-down;
-      max-width: 90vw;
-      max-height: 90vh;
-    }
-
-    figcaption {
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      padding-top: $std-padding;
-    }
-  }
-}
 
 
 // Buttons
 .link-button {
+  display: inline-block;
   background-color: $color-base;
   font: 18px / 22px 'MontserratSemiBold';
   text-transform: uppercase;

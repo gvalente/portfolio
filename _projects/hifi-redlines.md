@@ -6,7 +6,7 @@ header-params:
   title: HiFi & Redlines
   sub-title: In order to build products from the ground up, it is important to have big-picture sight of how to create design systems that scale and capitalize on operational efficiencies like reusable components and styles. Implementing these systems requires an obsession with details, awareness of edge cases, and familiarity with development practices in order to design products that can be successfully implemented.
 
-images:
+embeds:
 - aam-select-account.png
 - aam-states.png
 - aam-add-account-states.png
