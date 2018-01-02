@@ -7,7 +7,7 @@ nav-order: 1
 <div class="full-width full-width--text-zebra">
   <div class="wrapper">
     <div class="home-grid">
-      {% assign sorted_projects = site.projects | sort: 'homepage_order' %}
+      {% assign sorted_projects = site.projects | sort: 'homepage-order' %}
       {% for project in sorted_projects %}
         {% include
           home-item.html

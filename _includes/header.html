@@ -5,9 +5,10 @@
     </a>
     <div class="grid-row col-sm-12 center-sm col-med-8 end-med">
       {% assign navigation_pages = site.html_pages | sort: 'nav-order' %}
-        {% for p in navigation_pages %}
+      {% for p in navigation_pages %}
         {% if p.nav-order %}
-          <a href="{{ p.url }}" class="nav-item col-sm {% if p.url == page.url %}active{% endif %}">
+          <a href="{{ p.url }}"
+            class="nav-item col-sm {% if p.url == page.url %}active{% endif %}">
             {{ p.title }}
           </a>
         {% endif %}

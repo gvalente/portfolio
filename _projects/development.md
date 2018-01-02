@@ -1,6 +1,6 @@
 ---
 layout: project
-homepage_order: 4
+homepage-order: 4
 project-img-src: ../assets/images/development/
 
 header-params:
