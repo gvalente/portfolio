@@ -11,6 +11,7 @@ embeds:
 - aam-states.png
 - aam-add-account-states.png
 - menu-profile-picker.png
+- menu-profile-picker-RL.png
 - menu-campaign-picker.png
 - sidebar-color-investigation.png
 - app-scheduling.png
@@ -23,7 +24,9 @@ embeds:
 - controls-button-states.png
 - topic-utilization-spec.png
 - topic-utilization-states.png
+- topic-utilization-states-RL.png
 - controls-page-title.png
+- controls-page-title-RL.png
 - controls-table-pagination-RL.png
 - menu-content-labeling.png
 - funnel-tabs-states.png

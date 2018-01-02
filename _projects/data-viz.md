@@ -11,10 +11,13 @@ embeds:
 - paid-campaign-card-investigation.png
 - paid-explore.png
 - listening-volume-segment.png
+- listening-volume-segment-RL.png
 - listening-sentiment-segment.png
+- listening-sentiment-segment-RL.png
 - social-attribution.png
 - comparison.png
 - topic-utilization-states.png
+- topic-utilization-states-RL.png
 - excel-report1.png
 - excel-report2.png
 - excel-report-themes.png

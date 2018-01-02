@@ -19,6 +19,7 @@ body {
 
 main {
   flex: 1;
+  background-color: $color-base-light;
 }
 
 // Overrides
@@ -54,8 +55,6 @@ ul { padding-left: $std-padding * 8; }
 }
 
 
-
-
 // Buttons
 .link-button {
   display: inline-block;
@@ -69,7 +68,7 @@ ul { padding-left: $std-padding * 8; }
   border-radius: 5px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.30), 0 0 3px rgba(0,0,0,0.2);
 
-  &:hover { color: $color-accent1; }
+  &:hover { color: $color-accent2; }
 }
 
 
