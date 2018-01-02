@@ -31,6 +31,7 @@
 .home-grid {
   display: flex;
   flex-wrap: wrap;
+  padding: $std-padding*8 0;
 
   .item {
     position: relative;
@@ -120,23 +121,27 @@
 
 
 // Project Content
-.project-content {
-  @media (min-width: map-get($breakpoints, xlrg)) { // 1200px
-    max-width: 768px;
-  }
+.project-wrapper {
+  padding: $std-padding*8 0;
 
-  .header {
-    text-transform: uppercase;
-    padding-top: $std-padding * 6;
-    padding-bottom: $std-padding * 2;
-  }
-  .body-header {
-    margin-bottom: $std-padding;
-    font-weight: bold;
-  }
-  .spacer {
-    width: 100%;
-    height: $std-padding * 10;
+  .project-content {
+    @media (min-width: map-get($breakpoints, xlrg)) { // 1200px
+      max-width: 768px;
+    }
+
+    .header {
+      text-transform: uppercase;
+      padding-top: $std-padding * 6;
+      padding-bottom: $std-padding * 2;
+    }
+    .body-header {
+      margin-bottom: $std-padding;
+      font-weight: bold;
+    }
+    .spacer {
+      width: 100%;
+      height: $std-padding * 10;
+    }
   }
 }
 
