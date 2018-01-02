@@ -1,5 +1,6 @@
 ---
 layout: project
+homepage-order: 3
 project-img-src: ../assets/images/prototypes/
 
 header-params:

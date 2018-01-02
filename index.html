@@ -1,3 +1,21 @@
 ---
-layout: home
+layout: default
+title: Portfolio
+nav-order: 1
 ---
+
+<div class="full-width full-width--text-zebra">
+  <div class="wrapper">
+    <div class="home-grid">
+      {% assign sorted_projects = site.projects | sort: 'homepage-order' %}
+      {% for project in sorted_projects %}
+        {% include
+          home-item.html
+            url = project.url
+            title = project.header-params.title
+            img-src = project.project-img-src
+        %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

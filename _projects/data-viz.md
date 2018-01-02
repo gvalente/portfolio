@@ -1,5 +1,6 @@
 ---
 layout: project
+homepage-order: 1
 project-img-src: ../assets/images/data_viz/
 
 header-params:

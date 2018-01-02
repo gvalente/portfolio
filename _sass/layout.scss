@@ -210,6 +210,30 @@
 }
 
 
+// About
+.about-wrapper {
+  width: 100%;
+  padding: $std-padding*8 0;
+  background-color: $color-base-light;
+
+  .full-width-images {
+    width: 100%;
+
+    img {
+      float: left;
+      width: 50%;
+      height: 50vh;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    &--padded img {
+      padding-bottom: $std-padding*4;
+    }
+  }
+}
+
+
+
 // Site Footer
 .site-footer {
   display: flex;
