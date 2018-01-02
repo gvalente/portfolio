@@ -10,7 +10,7 @@
     transition: color 300ms;
     text-decoration: none;
 
-    &:hover { color: $color-accent1; }
+    &:hover { color: $color-accent2; }
   }
 
   .nav-item {
@@ -22,8 +22,8 @@
     padding: 0 $std-padding * 2;
     flex: 0;
 
-    &.active { color: $color-accent2; }
-    &:hover:not(.active) { color: $color-accent1; }
+    &.active { color: $color-accent1; }
+    &:hover:not(.active) { color: $color-accent2; }
   }
 }
 
@@ -206,11 +206,11 @@
     }
   }
 
-  #marvel-listening         { padding-bottom:  70%;   } // 1280x900
-  #marvel-dashboard         { padding-bottom: 124%;   } // 1280x1580
-  #marvel-profile-picker    { padding-bottom:  67%;   } // 1280x850
+  #marvel-profile-picker    { padding-bottom:  67.0%; } // 1280x850
   #marvel-add-profile-lofi  { padding-bottom:  62.5%; } // 1520x950
   #marvel-add-profile-medfi { padding-bottom:  62.5%; } // 1520x950
+  #marvel-listening         { padding-bottom:  70.0%; } // 1280x900
+  #marvel-dashboard         { padding-bottom: 124.0%; } // 1280x1580
 }
 
 
