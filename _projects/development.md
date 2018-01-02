@@ -14,12 +14,12 @@ embeds:
 - port-home-v1.png
 - port-content-design.png
 - type: button
-  content: View on Github
+  content: View this website on Github
   url: www.github.com/gvalente/portfolio
 - type: text
   header: Projector Corrector
   body: A Sketch plugin I built with javascript that lets the user modify the contrast and darken their sketch designs on the fly for better readability on washed out projectors.
 - type: button
-  content: View on Github
+  content: View Projector Corrector on Github
   url: www.github.com/gvalente/ProjectorCorrector
 ---

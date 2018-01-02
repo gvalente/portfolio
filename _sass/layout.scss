@@ -128,7 +128,6 @@
     @media (min-width: map-get($breakpoints, xlrg)) { // 1200px
       max-width: 768px;
     }
-
     .header {
       text-transform: uppercase;
       padding-top: $std-padding * 6;
@@ -142,6 +141,9 @@
       width: 100%;
       height: $std-padding * 10;
     }
+  }
+  .text:not(:first-child) h2 {
+    padding-top: $std-padding*15;
   }
 }
 
