@@ -1,5 +1,6 @@
 ---
 layout: project
+homepage_order: 2
 project-img-src: ../assets/images/hifi_redlines/
 
 header-params:
